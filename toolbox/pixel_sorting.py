@@ -73,7 +73,7 @@ def choose_segment_type():
 
 def choose_sort_direction(): # true for ascending
 	choices = ['Ascending', 'Descending']
-	direction = choose_option(choices, 'Sort Direction (top-left to bottom-right):')
+	direction = choose_option(choices, 'Sort Direction (top/left to bottom/right):')
 	if direction == 0:
 		return True
 	else:

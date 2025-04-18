@@ -99,7 +99,7 @@ def start_resaturate_process(image):
 	if image.mode == 'L':
 		print('Cannot resaturate a grayscale image!')
 		return image
-	shift_type = choose_shift_type()
+	shift_type = choose_scale_type()
 	print()
 	shift_by_percent = False
 	if shift_type == 1:
@@ -109,9 +109,9 @@ def start_resaturate_process(image):
 	print('Resaturating...')
 	return resaturate(image, shift, by_percent=shift_by_percent)
 
-def choose_shift_type():
+def choose_scale_type():
 	choices = ['By Constant', 'By Percent']
-	return choose_option(choices, 'Shift Type:')
+	return choose_option(choices, 'Scale Type:')
 
 def get_saturation_scale(by_percent=False):
 	if by_percent:
