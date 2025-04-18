@@ -129,10 +129,14 @@ def show_histogram(image, num_bins=10, frequency_type=0):
 		plt.bar(bars_a, [i[0] for i in intensities], width=bar_width, color='red', alpha=0.5, label='R')
 		plt.bar(bars_b, [i[1] for i in intensities], width=bar_width, color='green', alpha=0.5, label='G')
 		plt.bar(bars_c, [i[2] for i in intensities], width=bar_width, color='blue', alpha=0.5, label='B')
-		plt.xticks(bars_b, intervals)
-		plt.legend(loc='upper right', bbox_to_anchor=(1.15, 1)) # top right, 10% past graph
+		plt.xticks(bars_b, intervals, rotation=45, ha='right')
+		plt.legend(loc='upper right')
+		plt.subplots_adjust(bottom=0.25)
+		plt.tight_layout()
 	else: # grayscale
 		plt.bar(intervals, [i[0] for i in intensities], color='gray', alpha=0.5)
+		plt.xticks(range(len(intervals)), intervals, rotation=45, ha='right')
+		plt.subplots_adjust(bottom=0.25)
 	# open plot
 	plt.show()
 	return True
