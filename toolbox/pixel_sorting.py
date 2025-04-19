@@ -201,7 +201,7 @@ def get_glitch_frequency(): # [0,1]
 	return get_value(0, 100, 'Glitch Frequency (%)', default=50) / 100
 
 def get_glitch_coverage(): # [0,1]
-	return get_value(0, 100, 'Glitch Coverage (%)', default=50) / 100
+	return get_value(0, 100, 'Glitch Coverage (%)', default=100) / 100
 
 def choose_glitch_alignment(glitch_dir=2):
 	dim_names = get_dimension_names(glitch_dir)
