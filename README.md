@@ -1,6 +1,6 @@
-# Image Processing Toolbox :toolbox:
+# Image Processing Toolbox 🧰
 
-A powerful command-line image processing suite using PIL, featuring all the standard image editing tools, along with my own __experimental__ and  __psychedelic__ (:sparkles:) visual transformations.
+A powerful command-line image processing suite using PIL, featuring all the standard image editing tools, along with my own __experimental__ and  __psychedelic__ (✨) visual transformations.
 
 <img alt="Trippy ducks" src="gallery/trippy-ducks.jpg" width="500">
 
@@ -69,7 +69,7 @@ __Additional__
 
 ### Effects
 
-__:bricks: Page 1: Basics__
+__🧱 Page 1: Basics__
 
 - Crop
 
@@ -83,8 +83,8 @@ __:bricks: Page 1: Basics__
 
 <br>
 
-__:art: Page 2: Color / Contrast__
- 
+__🎨 Page 2: Color / Contrast__
+
 - Hue Shift – rotate the hue of all colors by some degree
 
 - Resaturation
@@ -100,12 +100,12 @@ __:art: Page 2: Color / Contrast__
 - Pseudo Color 
 	- False-color mapping for grayscale images using intensity heatmap or random colors
 
-- _Color Split_ :sparkles:
+- _Color Split_ ✨
 	- Choose a shape (like Y), and rip selected color channels apart from each other
  
 <br>
 
-__:cyclone: Page 3: Filters & Pixel Sorting__
+__🌀 Page 3: Filters & Pixel Sorting__
 
 - Convolution Matrices
 	- Create your own custom-sized kernel (for edge-detection, blur, sharpen, etc.)
@@ -118,32 +118,32 @@ __:cyclone: Page 3: Filters & Pixel Sorting__
 - Line Sort
 	- Reorder lines (or chunks) of the image based on brightness, randomness, or apply a circular shift
 
-- _Glitch Sort_ :sparkles:
+- _Glitch Sort_ ✨
 	- Experimental glitch-art effect with lots of parameters
 	- Choose `rows`, `columns`, or `chunks` to rearrange
 	- Adjust glitch `frequency`, `coverage`, and `direction`
 	- Apply a sorting function: `brightness`, `random`, `rotate`, `wave shift`
 	- Choose where on the image the glitch starts: `top`, `bottom`, `middle`
 
-- _Ghost Split_ :sparkles:
+- _Ghost Split_ ✨
 	- Trippy effect where every second line of pixels is shifted in some direction, splitting the image in two and creating the illusion of a superimposed ghost image  (as our eyes fail to distinguish the tiny slits where the lines were moved)
 	- Additional parameters allow you to blend the adjacent line pairs after shifting
 	- You may control the direction of the split, the number of splits (the image may be subdivided for multiple ghost to form), and whether the shift is circular
 
 <br>
 
-__:ocean: Page 4: Warp Effects__
+__🌊 Page 4: Warp Effects__
 
 - Wave Warp
 	- Apply a `square`, `triangular`, `sin` or `sawtooth` wave distortion across the image
 	- Choose wave `period`, `amplitude` and `direction`
 
-- _Mirror_ :sparkles:
+- _Mirror_ ✨
 	- Choose a number of mirrors—lines dividing the image vertically or horizontally—and copy one side of the mirror to the other in reverse
 
 <br>
 
-__:performing_arts:  Page 5: Blending & Overlays__
+__🎭  Page 5: Blending & Overlays__
 
 - Blend Lines – blend multiple rows or columns together with one of many blending modes
 
